@@ -1,0 +1,32 @@
+@startuml
+left to right direction
+Admin -- Restaurant
+Admin -- Customer
+Admin -- Staff
+
+Restaurant --> Login_To_System
+Restaurant --> Check_Orders
+Restaurant --> Create_Receipt
+Restaurant --> Allot_Tables
+Restaurant --> Collect_Payments
+
+
+
+Customer --> Login_To_System
+Customer --> Place_Order
+Customer --> Make_Payment
+Customer --> Track_Order
+
+
+Staff --> Login_To_System
+Staff --> Manage_Food_Items
+Staff --> Manage_Customer_Payments
+Staff --> Manage_Delivery
+Staff --> Manage_Restaurant_And_Customer
+Staff --> Manage_Complaints
+
+Admin --> Login_To_System
+Admin --> Manage_User_And_Application
+Admin --> Manage_Complaints
+Admin --> Manage_Restaurants
+Admin --> Manage_Staff
