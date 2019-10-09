@@ -1,0 +1,13 @@
+left to right direction
+actor admin
+admin --> (manage_restraunt)
+(manage_restraunt) --> (add_restraunt)
+(manage_restraunt) --> (update_restraunt)
+(manage_restraunt) --> (delete_restraunt)
+
+admin --> (orders)
+(orders) --> (view_orders)
+
+admin --> (manage_customer)
+(manage_customer) --> (block_customer)
+

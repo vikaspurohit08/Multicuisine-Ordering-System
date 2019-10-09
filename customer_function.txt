@@ -1,0 +1,19 @@
+left to right direction
+actor customer
+customer --> (select_restraunt)
+(select_restraunt) --> (select_food_items)
+(select_food_items) --> (cart)
+(cart) --> (payment)
+(payment) --> (history)
+
+(select_restraunt) -> (search_restraunt)
+(select_restraunt) -> (category)
+(select_restraunt) -> (sort)
+
+
+(select_food_items) -> (search_food_items)
+(select_food_items) -> (food_category)
+(select_food_items) -> (food_sort)
+
+(cart) -> (specify_qty)
+(cart) -> (remove_item)
